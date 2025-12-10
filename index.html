@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galgotias University</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="j.jpg">
+</head>
+<body>
+
+  <div class="floaters">
+    <span class="f f1"></span>
+    <span class="f f2"></span>
+    <span class="f f3"></span>
+    <span class="f f4"></span>
+    <span class="f f5"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo-glass">
+        <div class="logo-circle">H</div>
+        <div class="brand-text">HELP</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#courses" class="nav-link">Courses</a>
+      <a href="#admission" class="nav-link">Admission</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+  </aside>
+
+  <main class="page">
+    <header class="topbar">
+      <div class="top-left">
+        <button class="menu-btn" aria-label="menu">☰</button>
+        <div class="site-title">Galgotias University</div>
+      </div>
+
+      <div class="top-actions">
+        <a href="admin_login.php" class="admin-btn-gradient">Admin Login</a>
+
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Excellence in Education — Future Ready</h1>
+        <p class="hero-sub">A modern campus, industry-aligned curriculum and research-driven learning.</p>
+        <div class="hero-ctas">
+          <a class="cta primary" href="#admission">Apply Now</a>
+          <a class="cta secondary" href="#courses">Explore Courses</a>
+        </div>
+      </div>
+
+
+      <div class="hero-card glass-card">
+        <div class="card-top">
+          <div class="stat">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Programs</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">800k+</div>
+            <div class="stat-label">Students</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">500k+</div>
+            <div class="stat-label">Placements</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="courses" class="section">
+      <h2 class="section-title">Popular Courses</h2>
+
+      <div class="cards">
+        <article class="course-card glass-card">
+          <div class="card-inner">
+            <h3>B.Tech</h3>
+            <p>4 years — Engineering & Innovation</p>
+            <div class="pill">8 Semesters</div>
+          </div>
+        </article>
+
+      <article class="course-card glass-card">
+          <div class="card-inner">
+            <h3>BCA</h3>
+            <p>3 years — Computer Application</p>
+            <div class="pill">6 Semesters</div>
+          </div>
+        </article>
+      
+      <div class="cards">
+        <article class="course-card glass-card">
+          <div class="card-inner">
+            <h3>M.Tech</h3>
+            <p>2 years — Engineering & Innovation</p>
+            <div class="pill">4 Semesters</div>
+          </div>
+        </article>
+
+      <article class="course-card glass-card">
+          <div class="card-inner">
+            <h3>BCA</h3>
+            <p>3 years — Computer Application</p>
+            <div class="pill">6 Semesters</div>
+          </div>
+        </article>
+
+        <article class="course-card glass-card">
+          <div class="card-inner">
+            <h3>MBA</h3>
+            <p>2 years — Leadership & Strategy</p>
+            <div class="pill">4 Semesters</div>
+          </div>
+        </article>
+
+        <article class="course-card glass-card">
+          <div class="card-inner">
+            <h3>MCA</h3>
+            <p>2 years — Computing & Applications</p>
+            <div class="pill">4 Semesters</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<form action="backend/submit_form.php" method="POST">
+    <section id="admission" class="section form-section">
+      <div class="form-wrap glass-card">
+        <h2>Apply Now</h2>
+
+        <form class="admission-form" method="post" action="backend/submit_form.php" novalidate>
+
+          <div class="row">
+            <input type="text" name="first_name" placeholder="First name" required>
+            <input type="text" name="middle_name" placeholder="Middle name">
+            <input type="text" name="last_name" placeholder="Last name" required>
+          </div>
+
+          <div class="row">
+            <input type="text" name="admission_no" placeholder="Admission number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="additional_email" placeholder="Additional email">
+          </div>
+
+          <div class="row">
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="tel" name="contact_number" placeholder="Contact number" required>
+            <select name="gender"required>
+              <option value="">Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <textarea name="message" placeholder="Message (optional)"></textarea><br><br>
+
+          <div class="row actions">
+            <button class="uni-btn" type="submit">Submit</button>
+            <button class="uni-btn" type="reset">Reset</button>
+            
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact & Visit</h2>
+      <div class="contact-grid">
+        <div class="contact-card glass-card">
+          <h3>Admissions</h3>
+          <p>Email: admissions@galgotias.edu.in</p>
+          <p>Phone: +91 87978 00835</p>
+        </div>
+
+        <div class="contact-card glass-card">
+          <h3>Address</h3>
+          <p>Galgotias University Campus, Yamuna Expressway, Greater Noida</p>
+        </div>
+
+        <div class="contact-card glass-card">
+          <h3>Visit</h3>
+          <p>Schedule a campus visit — call or email to book a slot.</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="developer-credit">👨‍💻 Developer — Yuvraj Singh</p>
+    
+  </main>
+
+</body>
+</html>
